@@ -24,6 +24,15 @@
 <!-- Customized Bootstrap Stylesheet -->
 <link href="css/style.css" rel="stylesheet">
 
+<!-- Teinte bleutée légère -->
+<style>
+    :root { --blue-tint: #e8f0fb; --blue-light: #dce8f8; }
+    body { background-color: var(--blue-tint); }
+    .container-fluid:not(.bg-primary) { background-color: var(--blue-tint) !important; }
+    #about, #skill { background-color: var(--blue-light) !important; }
+    .navbar.bg-light { background-color: #d6e6f7 !important; }
+</style>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
 
@@ -178,13 +187,14 @@
                 </div>
             </div>
 
-            <!-- Stage 2ème année -->
+            <!-- Stages BTS -->
             <div class="col-lg-6">
-                <h3 class="mb-4">Stage de deuxième année</h3>
+                <h3 class="mb-4">Stages BTS</h3>
                 <div class="border-left border-primary pt-2 pl-4 ml-2">
+
                     <div class="position-relative mb-4">
                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                        <h5 class="font-weight-bold mb-1">Cathelain Hermies</h5>
+                        <h5 class="font-weight-bold mb-1">Cathelain Hermies – Stage 2ème année</h5>
                         <p class="mb-2"><strong>Service Informatique</strong> | <small>6 janvier - 7 février 2025</small></p>
                         <ul>
                             <li>- Support utilisateur</li>
@@ -196,6 +206,20 @@
                             <li>- Administration serveur QNAP, reset et ajout de dossiers partagés</li>
                         </ul>
                     </div>
+
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Lenglet Imprimeurs – Stage 1ère année</h5>
+                        <p class="mb-2"><strong>Service Informatique</strong> | <small>Janvier - Février 2024</small></p>
+                        <ul>
+                            <li>- Mise en place de serveurs NAS (TrueNas)</li>
+                            <li>- Support utilisateur</li>
+                            <li>- Installation Windows et pack Office 365</li>
+                            <li>- Dépannage borne wifi</li>
+                            <li>- Topologie réseau</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 
@@ -207,7 +231,7 @@
                     <div class="position-relative mb-4">
                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                         <h5 class="font-weight-bold mb-1">Lenglet Imprimeurs - Raillencourt-Saint-Olle</h5>
-                        <p class="mb-2"><strong>Lenglet Imprimeurs</strong> | <small>Août 2024</small></p>
+                        <p class="mb-2"><strong>Lenglet Imprimeurs</strong> | <small>Août 2024 &amp; Août 2025</small></p>
                         <p>Manutentionnaire</p>
                     </div>
 
@@ -218,25 +242,6 @@
                         <p>Animation jeux sportifs</p>
                     </div>
 
-                </div>
-            </div>
-
-            <!-- Stage 1ère année -->
-            <div class="col-lg-6">
-                <h3 class="mb-4">Stage de première année</h3>
-                <div class="border-left border-primary pt-2 pl-4 ml-2">
-                    <div class="position-relative mb-4">
-                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                        <h5 class="font-weight-bold mb-1">Lenglet Imprimeurs</h5>
-                        <p class="mb-2"><strong>Service Informatique</strong> | <small>Janvier - Février 2024</small></p>
-                        <ul>
-                            <li>- Mise en place de serveurs NAS (TrueNas)</li>
-                            <li>- Support utilisateur</li>
-                            <li>- Installation Windows et pack Office 365</li>
-                            <li>- Dépannage borne wifi</li>
-                            <li>- Topologie réseau</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
 
@@ -257,7 +262,7 @@
                 <ul class="list-inline mb-4" id="portfolio-flters">
                     <a class="btn btn-sm btn-outline-primary m-1 active" target="_blank" href="img/certif_anssi.pdf">Certifications ANSSI</a>
                     <a class="btn btn-sm btn-outline-primary m-1 active" target="_blank" href="img/Certifications_RGPD.pdf">Certifications RGPD</a>
-                    <a class="btn btn-sm btn-outline-primary m-1 active" target="_blank" href="img/tableau_de_competences.pdf">Tableau de compétences</a>
+                    <a class="btn btn-sm btn-outline-primary m-1 active" target="_blank" href="img/tableau_de_competences.pdf">MooC - Club EBIOS</a>
                 </ul>
             </div>
         </div>
@@ -504,7 +509,7 @@
                         <h1>Contactez moi par mail &amp; linkedin</h1>
                         <br>
                         <p>Mon adresse mail :
-                            <a href="mailto:baptiste.mathius@edu.saintluc-cambrai.com">baptiste.mathius@edu.saintluc-cambrai.com</a>
+                            <a href="/cdn-cgi/l/email-protection#ccaeadbcb8a5bfb8a9e2a1adb8a4a5b9bf8ca9a8b9e2bfada5a2b8a0b9afe1afada1aebeada5e2afa3a1"><span class="__cf_email__" data-cfemail="ed8f8c9d99849e9988c3808c998584989ead888998c39e8c84839981988ec08e8c808f9f8c84c38e8280">[email&#160;protected]</span></a>
                         </p>
                         <br>
                         <p>Mon linkedin :
@@ -537,21 +542,10 @@
 <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 <!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 <script src="lib/typed/typed.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-
-<!-- Contact Javascript File -->
-<script src="mail/jqBootstrapValidation.min.js"></script>
-<script src="mail/contact.js"></script>
-
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
-
-</body>
-</html>
+<script src="lib/isotope/isotope.pkgd.m
